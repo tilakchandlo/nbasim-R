@@ -1,0 +1,14 @@
+registerDoParallel(cores=2)
+system.time(sim.nba.parallel(500, 1000, 10, 10))
+   user  system elapsed 
+  1.651   0.324   2.057 
+
+system.time(sim.nba.parallel(5000, 1000, 10, 10))
+   user  system elapsed 
+ 22.804   0.352  19.337
+
+system.time(sim.nba.parallel(50000, 1000, 10, 10))
+   user  system elapsed 
+213.085   0.532 197.968 
+
+
